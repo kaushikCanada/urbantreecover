@@ -6,6 +6,13 @@ from PIL import Image
 from transformers import MaskFormerFeatureExtractor, MaskFormerForInstanceSegmentation
 import os
 
+from huggingface_hub import login
+# Access the Hugging Face token from secrets
+hf_token = st.secrets["huggingface"]["api_token"]
+
+# Log in to Hugging Face
+login(token=hf_token)
+
 # Set the page layout
 st.set_page_config(page_title="Image Segmentation App", layout="wide")
 
