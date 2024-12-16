@@ -1,8 +1,5 @@
 scipy
 streamlit
-torch
-torchvision
-pillow
 transformers
-numpy
+torchgeo
 huggingface_hub
